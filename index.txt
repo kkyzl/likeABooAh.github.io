@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<style type = "text/css">
+			a:visited { 
+				color:ff0000;
+				//background-color:red;
+			}
+		 </style>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="bookmark" href="favicon.ico"/>
+		<title>CS_Overview_B09901042</title>
+		<audio loop autoplay>
+  			<source src="cover.mp3" type="audio/mpeg">
+		</audio>
+	</head>
+	
+	<body onload = "ShowTime()">
+		<img src="river.png" width = 90%>
+		<h1>Hi, this is K.</h1>
+		<h2>About Me...</h2>
+		<p><hr width=80% color=000000 size=2 align=left>
+Went to <a href="http://www.fhjh.tp.edu.tw/dispPageBox/mainHP.html">Taipei Fuhsing Private School</a> for high school degree. <br> Currently study at National Taiwan University, major in <a href="https://web.ee.ntu.edu.tw/">Electrical Engineering</a></p>
+		<h3>My Favorite Artist: <a href="https://straykids.jype.com/">Stray Kids</a></h3>
+		<p>Top 3 songs:<UL>
+			<LI><a href="https://www.youtube.com/watch?v=vel653wMcWE">Voices</a></LI>
+			<LI><a href="https://www.youtube.com/watch?v=AdfIfFGCqgo">Hellevator</a></LI>
+			<LI><a href="https://www.youtube.com/watch?v=_oCptmj2gIQ">Streetlight</a></LI>
+		</UL></p>
+		<h3>Dance Choreographies top 3:</h3>
+		<p><UL>
+			<LI><a href="https://www.youtube.com/watch?v=SNCQsu5uXbo">False Confidence</a> Choreography by Sean Lew</LI>
+			<LI><a href="https://www.youtube.com/watch?v=qmQXpegwjH8&list=PLl_9y0joXxHaiUiFqMyeo0Uq41x_V6WZB&index=17">These Days</a> Choreography by Junsun Yoo</LI>
+			<LI><a href="https://www.youtube.com/watch?v=bY_TqcsMyHM">When the Party's Over</a>Choreography by Hyunjin</LI>
+		</UL>		
+		</p>
+		<h3>Top 3 sentences</h3>
+		<p>I really don't know what to write here... so let me introduce three sentences that inspire me the most recently.
+		<UL>
+			<LI>The world breaks everyone, and afterward many are strong at the broken places. -Hemingway</LI>
+			<LI>Not a fact. Everything we see is a perspective, not the truth. -Marcus Aurelius</LI>
+			<LI>With every broken bone, I swear I lived. -One Republic</LI>
+		</UL></p>
+		<p>Date/Time: <span id="datetime"></span></p>
+
+		<script language = "JavaScript">
+			function ShowTime(){
+				var dt = new Date();
+				document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"-"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"-"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (dt.getMinutes()) + ":"+(dt.getSeconds());
+				setTimeout('ShowTime()',1000);	
+			}
+			
+		
+		</script>
+
+	</body>
+</html>
